@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minat dan Hobi</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css2?family=Bentham&display=swap' rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #157964;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 200%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/hobiii.webp" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title"><strong>Minat dan Hobi<br>saya</h1></strong>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html"></a>Minat dan hobi saya dan beberapa novel yang pernah di baca
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Minat Pada Bidang Tekhnologi</h2>
+                        <p>Saya memiliki ketertarikan yang besar terhadap bidang tekhnologi, terutama dalam hal pengembangan aplikasi dan antarmuka pengguna.
+                         saya tertarik dalam pemanfaatan tekhnologi untuk mempermudah pekerjaan manusia, dan saya juga berminat menjadi seorang yang dapat membuat sebuah web yang bagus, dalam pemanfaatnya untuk banyak orang.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Olahraga</h2>
+                        <p>Saya suka main bulu tangkis, salah satu olahraga yang paling menyenangkan dilakukan ketika libur</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+                        <h2>Belajar</h2>
+						<ol>
+							<li>menambah pengetahuan</li>
+							<li>meningkatkan keahlian di bidang komunikasi</li>
+							<li>agar berfikiran logis dan kreatif</li>
+							<li>saya akan menjadi fersi terbaik</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm"> 
+						<h2>novel yang saya baca</h2>
+						<ol>
+							<li>Laskar pelangi</li>
+                            <li>Perahu Kertas</li>
+                            <li>Sang Pemimpi</li>
+                            <li>Hujan</li>
+                            <li>Tentang kamu(2016)</li>
+							<li>Pulang</li>
+							<li>pergi</li>
+							<li>Sabtu bersama bapak</li>
+							<li>Sepotong hati yang baru</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/detail31.jpg" alt="Dashboard App Main Interface">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/detail32.jpg" alt="Dashboard App Analytics View">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/detail33.jpg" alt="Dashboard App Mobile View">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Ada Pertanyaan?<br>
+			<p>tantri 2025</p>
+		</footer>
+	</body>
+	</html>
