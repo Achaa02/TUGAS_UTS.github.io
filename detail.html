@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #157964;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: rgb(31, 115, 69);
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/detail1.jpg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Membuat Desain UI<br>Menggunakan Figma</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> experience
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Peran</h2>
+						<p>saya harus berperan sebagai UI designer untuk membuat antarmuka aplikasi KampusPay, sebuah platform pembayaran
+							digital yang dirancang khusus untuk mendukung berbagai kebutuhan transaksi dilingkungan kampus, seperti transaksi di kantin 
+							transfer dan top up saldo</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Saya mengembangkan kemampuan</h2>
+						<p>dalam penggunaan figma meliputi:</p>
+						<ol>
+							<li>desain halaman login</li>
+							<li>tampilan utama (dashboard)</li>
+							<li>desain antarmuka pada menu bayar</li>
+							<li>dan tampilan berhasil melakukan pembayaran</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Membuat prototype interaktif</h2>
+						<p>saya membuat prototype interaktif yang memungkinkan simulasi langsung alur transaksi
+							mulai dari login, pengecekan saldo, hingga proses pembayaran dengan cara ini semua dapat memahami
+							bagaimana sistem akan bekerja saat diimplementasikan.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/detail12.jpeg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/detail12.jpeg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/detail12.jpeg" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Saya<br>
+			ada pertanyaan?<br>damayantitantri@gmail.com</h2>
+			<p>designed & developed by tantri 2025</p>
+		</footer>
+	</body>
+	</html>
